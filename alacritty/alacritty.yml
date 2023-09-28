@@ -1,0 +1,85 @@
+---
+env:
+  TERM: alacritty
+
+# import:
+#   - ~/.config/alacritty/themes/dracula.yml
+
+window:
+  opacity: 0.6
+  title: Alacritty
+  dynamic_title: true
+  class:
+    instance: Alacritty
+    general: Alacritty
+  padding:
+    x: 10
+    y: 10
+
+scrolling:
+  history: 100000
+  multiplier: 6
+
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+  bold:
+    style: Bold
+  italic:
+    style: Italic
+  bold_italic:
+    style: Bold Italic
+  size: 9.0
+  builtin_box_drawing: true
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: '#1e1e1e'
+    foreground: '#d4d7ff'
+  normal:
+    black: '#222236'
+    red: '#d95177'
+    green: '#78dca7'
+    yellow: '#fcf39c'
+    blue: '#759eea'
+    cyan: '#6be5e3'
+    magenta: '#8783d9'
+    white: '#e4e7ff'
+  bright:
+    black: '#e5b976'
+    red: '#d54c73'
+    green: '#7bdba6'
+    yellow: '#fcf295'
+    blue: '#6d98e8'
+    cyan: '#65dedc'
+    magenta: '#837dd7'
+    white: '#f4f7ff'
+  dim:
+    black: '#12121f'
+    red: '#df4e75'
+    green: '#84e5ac'
+    yellow: '#fcf4a2'
+    blue: '#7ea4ec'
+    magenta: '#908cdb'
+    cyan: '#72e7e5'
+    white: '#d4d7ff'
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
+cursor:
+  style:
+    shape: Beam
+    blinking: Always
+  unfocused_hollow: false
+
+shell:
+  program: /bin/zsh
+
+key_bindings:
+  - { key: Y, mods: Control, action: Paste }
+  - { key: W, mods: Alt, action: Copy }
+  - { key: W, mods: Control, action: Quit }

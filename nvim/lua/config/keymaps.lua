@@ -6,3 +6,5 @@ vim.keymap.set("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Previous Buffer" 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+vim.keymap.set({ "n" }, "<C-S-A-Up>", "<CMD>LineDuplicate -1<CR>")
+vim.keymap.set({ "n" }, "<C-S-A-Down>", "<CMD>LineDuplicate +1<CR>")

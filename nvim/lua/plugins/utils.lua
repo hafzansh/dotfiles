@@ -1,8 +1,11 @@
 return {
 
-  "mfussenegger/nvim-dap",
-  "smjonas/duplicate.nvim",
+  "rcarriga/nvim-dap-ui",
+  lazy = true,
+  dependencies = {
+    "mfussenegger/nvim-dap",
+  },
   config = function()
-    require("duplicate").setup()
+    require("dapui").setup()
   end,
 }

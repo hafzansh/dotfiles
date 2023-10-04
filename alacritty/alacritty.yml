@@ -6,7 +6,7 @@ env:
 #   - ~/.config/alacritty/themes/dracula.yml
 
 window:
-  opacity: 0.6
+  opacity: 0.95
   title: Alacritty
   dynamic_title: true
   class:
@@ -36,10 +36,10 @@ draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '#1e1e1e'
-    foreground: '#d4d7ff'
+    background: '#101017'
+    foreground: '#bdc3df'
   normal:
-    black: '#222236'
+    black: '#33333f'
     red: '#d95177'
     green: '#78dca7'
     yellow: '#fcf39c'

@@ -39,6 +39,7 @@ return {
             analysisExcludedFolders = { "/snap/bin/flutter/" },
             renameFilesWithClasses = "prompt", -- "always"
             enableSnippets = true,
+            updateImportsOnRename = true,
           },
         },
       })

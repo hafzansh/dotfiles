@@ -17,4 +17,10 @@ return {
       require("mini.move").setup()
     end,
   },
+  {
+    "hinell/duplicate.nvim",
+  },
+  {
+    "mg979/vim-visual-multi",
+  },
 }

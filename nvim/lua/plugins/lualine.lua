@@ -5,6 +5,7 @@ return {
     "nvim-tree/nvim-web-devicons",
     "meuter/lualine-so-fancy.nvim",
     "SmiteshP/nvim-navic",
+    "ThePrimeagen/harpoon",
   },
   opts = {
     options = {
@@ -19,6 +20,7 @@ return {
     sections = {
       lualine_a = {
         { "fancy_mode", width = 1 },
+        { "HarpoonNumberInactive" },
       },
       lualine_b = {
         { "fancy_branch" },
@@ -36,6 +38,11 @@ return {
         },
       },
       lualine_x = {
+        {
+          function()
+            return vim.g.flutter_tools_decorations.app_version
+          end,
+        },
         { "fancy_macro" },
         { "fancy_diagnostics" },
         { "fancy_searchcount" },
@@ -46,6 +53,11 @@ return {
       },
       lualine_z = {
         { "fancy_lsp_servers" },
+        {
+          function()
+            return vim.g.flutter_tools_decorations.device
+          end,
+        },
       },
     },
   },

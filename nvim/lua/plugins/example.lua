@@ -12,6 +12,14 @@ return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 
+  "nvim-neo-tree/neo-tree.nvim",
+  opts = {
+    filesystem = {
+      filtered_items = {
+        visible = true,
+      },
+    },
+  },
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",

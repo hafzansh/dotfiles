@@ -3,6 +3,7 @@ return {
   opts = {
     defaults = {
       ["<leader>h"] = { name = "Harpoon" },
+      ["<leader>m"] = { name = "Flutter" },
     },
   },
 }

@@ -1,16 +1,6 @@
 return {
 
   {
-    "rcarriga/nvim-dap-ui",
-    lazy = true,
-    dependencies = {
-      "mfussenegger/nvim-dap",
-    },
-    config = function()
-      require("dapui").setup()
-    end,
-  },
-  {
     "echasnovski/mini.move",
     version = false,
     config = function()
@@ -22,5 +12,46 @@ return {
   },
   {
     "mg979/vim-visual-multi",
+  },
+  {
+    "karb94/neoscroll.nvim",
+    enabled = false,
+    config = function()
+      require("neoscroll").setup({})
+    end,
+  },
+  {
+    "folke/neodev.nvim",
+    opts = {},
+    config = function()
+      require("neodev").setup({
+        library = { plugins = { "neotest" }, types = true },
+      })
+    end,
+  },
+  {
+    "stevearc/oil.nvim",
+    opts = {},
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  {
+
+    "akinsho/bufferline.nvim",
+    opts = {
+      options = {
+        separator_style = "thin",
+
+        hover = {
+          enabled = true,
+          delay = 200,
+          reveal = { "close" },
+        },
+      },
+    },
+  },
+  {
+    "vimpostor/vim-tpipeline",
+    enabled = false,
   },
 }

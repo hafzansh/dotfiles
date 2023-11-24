@@ -12,14 +12,6 @@ return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 
-  "nvim-neo-tree/neo-tree.nvim",
-  opts = {
-    filesystem = {
-      filtered_items = {
-        visible = true,
-      },
-    },
-  },
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
@@ -52,8 +44,7 @@ return {
     dependencies = { "hrsh7th/cmp-emoji" },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
-      local cmp = require("cmp")
-      opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
+      table.insert(opts.sources, { name = "emoji" })
     end,
   },
 

@@ -52,6 +52,8 @@ return {
   {
     "nvim-neotest/neotest",
     dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
       "sidlatau/neotest-dart",
     },
     opts = {

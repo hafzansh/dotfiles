@@ -16,17 +16,6 @@ return {
     -- "ThePrimeagen/harpoon",
   },
   config = function()
-    local function trunc(trunc_width, trunc_len, hide_width, no_ellipsis)
-      return function(str)
-        local win_width = vim.fn.winwidth(0)
-        if hide_width and win_width < hide_width then
-          return ""
-        elseif trunc_width and trunc_len and win_width < trunc_width and #str > trunc_len then
-          return str:sub(1, trunc_len) .. (no_ellipsis and "" or "...")
-        end
-        return str
-      end
-    end
     local auto_theme_custom = require("lualine.themes.auto")
     auto_theme_custom.normal.c.bg = "none"
     local color_status = "#252535"
@@ -96,6 +85,45 @@ return {
             left_padding = 1,
           },
         },
+
+        --   lualine_a = { "filename" },
+        --   lualine_b = {},
+        --   lualine_c = {},
+        --   lualine_x = {},
+        --   lualine_y = {},
+        --   lualine_z = {},
+        -- },
+        -- tabline = {
+        --   lualine_a = {
+        --     {
+        --       "buffers",
+        --       separator = { left = "", right = "" },
+        --       right_padding = 2,
+        --       left_padding = 2,
+        --       symbols = { alternate_file = "" },
+        --     },
+        --   },
+        --   lualine_b = {},
+        --   lualine_c = {},
+        --   lualine_x = {},
+        --   lualine_y = {},
+        --   lualine_z = {
+        --     {
+        --       "diagnostics",
+        --       sources = { "nvim_diagnostic", "nvim_lsp" },
+        --       sections = { "error", "warn", "info", "hint" },
+        --       diagnostics_color = {
+        --         error = "DiagnosticError", -- Changes diagnostics' error color.
+        --         warn = "DiagnosticWarn", -- Changes diagnostics' warn color.
+        --         info = "DiagnosticInfo", -- Changes diagnostics' info color.
+        --         hint = "DiagnosticHint", -- Changes diagnostics' hint color.
+        --       },
+        --       symbols = { error = "E", warn = "W", info = "I", hint = "H" },
+        --       colored = true, -- Displays diagnostics status in color if set to true.
+        --       update_in_insert = false, -- Update diagnostics in insert mode.
+        --       always_visible = false, -- Show diagnostics even if there are none.
+        --     },
+        --   },
       },
     })
   end,

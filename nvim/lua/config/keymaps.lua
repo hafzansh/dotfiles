@@ -38,18 +38,6 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "php", "blade" },
-  callback = function()
-    vim.keymap.set("n", "<leader>la", ":Laravel artisan<cr>")
-    vim.keymap.set("n", "<leader>lr", ":Laravel routes<cr>")
-    vim.keymap.set("n", "<leader>lm", ":Laravel related<cr>")
-    vim.keymap.set("v", "<leader>lt", function()
-      require("laravel.tinker").send_to_tinker()
-    end, { desc = "Laravel Application Routes" })
-  end,
-})
-
 --forward backward word ignoring punctuation
 local pattern = [[\v['"({[< ]@<=(\w)|^(\w)|(['"\>)}]\.)@<=(\w)|(['"])@<=([][(){}.,;])(['"])]]
 vim.keymap.set({ "n", "v" }, "<M-w>", function()
@@ -63,6 +51,27 @@ end)
 vim.keymap.set({ "n", "v", "i" }, "<M-q>", function()
   print(vim.fn.exists("b:_codeium_completions"))
 end)
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "php", "blade" },
+  callback = function()
+    vim.keymap.set("n", "<leader>la", ":Laravel artisan<cr>")
+    vim.keymap.set("n", "<leader>lr", ":Laravel routes<cr>")
+    vim.keymap.set("n", "<leader>lm", ":Laravel related<cr>")
+    vim.keymap.set("v", "<leader>lt", function()
+      require("laravel.tinker").send_to_tinker()
+    end, { desc = "Laravel Application Routes" })
+  end,
+})
+
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = { "http" },
+--   callback = function()
+--     vim.keymap.set("n", "<leader>lr", "<Plug>RestNvim")
+--     vim.keymap.set("n", "<leader>lp", "<Plug>RestNvimPreview")
+--     vim.keymap.set("n", "<leader>ll", "<Plug>RestNvimLast")
+--   end,
+-- })
 -- vim.api.nvim_set_keymap("n", "<F6>", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true })
 --
 -- -- Redo last selected option

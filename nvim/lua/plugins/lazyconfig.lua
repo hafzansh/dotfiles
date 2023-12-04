@@ -7,10 +7,11 @@ return {
       background_colour = "#000000",
       top_down = false,
       render = "compact",
+      stages = "static",
       timeout = 1500,
     },
   },
-  -- Treesitter-blade config
+  -- Treesitter-blade configa
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {

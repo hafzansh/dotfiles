@@ -38,10 +38,14 @@ return {
   {
 
     "akinsho/bufferline.nvim",
+    enabled = true,
     opts = {
       options = {
-        separator_style = "thin",
-
+        separator_style = { "", "" },
+        indicator = {
+          icon = "> ",
+          style = "none",
+        },
         hover = {
           enabled = true,
           delay = 200,
@@ -53,5 +57,14 @@ return {
   {
     "vimpostor/vim-tpipeline",
     enabled = false,
+  },
+  {
+    "rest-nvim/rest.nvim",
+    dependencies = { { "nvim-lua/plenary.nvim" } },
+    config = function()
+      require("rest-nvim").setup({
+        --- Get the same options from Packer setup
+      })
+    end,
   },
 }

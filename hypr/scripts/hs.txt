@@ -1,0 +1,500 @@
+   39  sudo nvim /etc/mkinitcpio.conf
+   40  sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
+   41  sudo nvim /etc/modprobe.d/nvidia.conf
+   42  cd /etc/pacman.d/hooks
+   43  cd /etc/pacman.d/
+   44  ls
+   45  mkdir hooks
+   46  sudo mkdir hooks
+   47  cd hooks
+   48  sudo nvim nvidia.hook
+   49  which nvidia
+   50  pacman -Q | grep "nvidia"
+   51  uname -r
+   52  yay linux
+   53  sudo nvim nvidia.hook
+   54  sudo reboot now
+   55  lspci -k | grep -A 2 -E "(VGA|3d)"
+   56  yay nvidia
+   57  lspci -k | grep -A 2 -E "(VGA|3d)"
+   58  sudo nvim /etc/pacman.d/hooks/nvidia.hook
+   59  ls
+   60  clear
+   61  cd /boot/loader/entries
+   62  cd /boot/
+   63  ls
+   64  cd /etc/default/
+   65  ls
+   66  cd ..
+   67  sudo mkinitcpio -P
+   68  sudo mkinitcpio -p
+   69  sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
+   70  sudo mkinitcpio -P
+   71  sudo reboot now
+   72  lsmod | grep nvidia
+   73  yay nvidia-settings
+   74  nvidia-settings 
+   75  nvidia-settings --help
+   76  clear
+   77  yay kitty
+   78  yay -S polkit gnome pipewire wireplumber xdg-desktop-portal-hyprland nwg-look-bin swaync cliphist wl-clipboard nautilus gradience waybar hyprpaper rofi ttf-font-awesome swaylock-effects slurp swayidle hyprpicker
+   79  mkdir -p ~/.config/waybar
+   80  cp /usr/share/waybar/config ~/.config/waybar/
+   81  yay hyprland-bin
+   82  yay -S hyprland
+   83  cd /usr/share/hyprland
+   84  ls
+   85  cd ~/
+   86  ls
+   87  cd .config
+   88  ls
+   89  hyprland
+   90  which hyprland
+   91  yay -S hyprlnad
+   92  yay -S hyprland
+   93  sudo reboot now
+   94  clear
+   95  waybar
+   96  cd ~/.config
+   97  ls
+   98  cd hypr
+   99  ls
+  100  nvim hyprland.conf 
+  101  nvim hyprland.conf 
+  102  cd /boot/loader
+  103  nvidia-settings
+  104  lspci -k | grep -A 2 -E "(VGA|3d)"
+  105  libvga
+  106  cd ~/
+  107  ls
+  108  git clone guglielmopiaseti/hyprland-dotfiles.git dotfiles/
+  109  git clone https://guglielmopiaseti/hyprland-dotfiles.git dotfiles/
+  110  git clone https://github.com/guglielmopiaseti/hyprland-dotfiles.git dotfiles/
+  111  git clone https://github.com/guglielmopiaseti/hyprland-dotfiles.git
+  112  thunar
+  113  hyprland
+  114  sudo pacman -S hyprland
+  115  Hyprland
+  116  hyprland
+  117  Hyprland
+  118  git clone https://github.com/guglielmopiaseti/hyprland-dotfiles.git
+  119  yay gh-cli
+  120  yay gh
+  121  yay github-cli
+  122  yay firefox
+  123  nvim ~/.config/hypr/hyprland.conf
+  124  nano ~/.config/hypr/hyprland.conf
+  125  nano ~/.config/hypr/hyprland.conf
+  126  firefox
+  127  lspci -k | grep -A 2 -E "(VGA|3d)"
+  128  lspci -k | grep -A 2 -E "(VGA|3D)"
+  129  Hyprland
+  130  Hyprland
+  131  rofi
+  132  rofi --drun
+  133  rofi -show drun
+  134  rofi -show drun
+  135  yay nautilus
+  136  rofi -show drun
+  137  yay ark
+  138  nvidia-smi
+  139  nvim ~/.config/hypr/hyprland.conf 
+  140  nvim ~/.config/hypr/hyprland.conf 
+  141  yay btop
+  142  btop
+  143  yay swaylock
+  144  yay wlogout
+  145  lspci -k | grep -A 2 -E "(VGA|3d)"
+  146  lspci -k | grep -A 2 -E "(VGA|3D)"
+  147  nvim ~/.config/hypr/hyprland.conf 
+  148  cd /dev/dri/
+  149  ls
+  150  cd card1
+  151  cat card1
+  152  nvim ~/.config/hypr/hyprland.conf 
+  153  nvim ~/.config/hypr/hyprland.conf 
+  154  nvim ~/.config/hypr/hyprland.conf 
+  155  nvim ~/.config/hypr/hyprland.conf 
+  156  pipewire
+  157  pulseaudio
+  158  nvim ~/.config/hypr/hyprland.conf 
+  159  clear~/.config/hypr/hyprland.conf 
+  160  clear
+  161  sudo nano /etc/fstab
+  162  sudo reboot now
+  163  hyprctl monitor
+  164  hyprctl monitors
+  165  hyprctl monitors
+  166  hyprctl monitors
+  167  prime-run
+  168  yay prime
+  169  prime-run /usr/lib/firefox/firefox %u
+  170  which prime
+  171  prime --help
+  172  prime glxinfo | grep OpenGL
+  173  yay prime-run
+  174  yay prime
+  175  yay prime
+  176  prime-run vulkaninfo
+  177  yay vulkaninfo
+  178  prime-run vulkaninfo
+  179  prime-run /usr/lib/firefox/firefox %u
+  180  cd ~/.config
+  181  nvim waybar/
+  182  nvim waybar/
+  183  nvim waybar/
+  184  gh --help
+  185  gh auth
+  186  gh auth login
+  187  yay ntfs3
+  188  yay ntfs-3g
+  189  lsblk
+  190  cd ~
+  191  ls
+  192  mkdir mnt
+  193  cd mnt
+  194  mkdir Data
+  195  mount /dev/sda1 ~/mnt/Data/
+  196  sudo mount /dev/sda1 ~/mnt/Data/
+  197  sudo unmount /dev/sda1 ~/mnt/Data/
+  198  sudo umount /dev/sda1 ~/mnt/Data/
+  199  sudo umount /dev/sda4 ~/mnt/Data/
+  200  sudo mount /dev/sda4 ~/mnt/Data/
+  201  blkid /dev/sda4
+  202  blkid /dev/sda
+  203  blkid
+  204  sudo nano /etc/fstab
+  205  blkid /dev/sda1
+  206  blkid /dev/sdb1
+  207  sudo blkid /dev/sda4
+  208  mkdir Documents
+  209  mkdir System
+  210  mkdir Other
+  211  sudo mount /dev/sda2 ~/mnt/Documents/
+  212  sudo blkid dev/sda
+  213  sudo blkid /dev/sda
+  214  sudo blkid /dev/sda2
+  215  cd /home/hafiz/mnt
+  216  ls
+  217  nvim ~/.config/hypr/hyprland.conf 
+  218  nvim ~/.config/hypr/hyprland.conf 
+  219  ps -e | grep pipewire
+  220  pactl
+  221  pactl info
+  222  btop
+  223  yay obs-studio
+  224  nvim ~/.config/hypr/hyprland.conf 
+  225  df -h
+  226  Hyprland
+  227  hyprctl monitors
+  228  hyprpaper
+  229  waybar
+  230  cd ~/.config/waybar
+  231  nvim .
+  232  yay dunst
+  233  cd /usr/lib/polkit-1/polkit
+  234  cd /usr/lib/polkit-1
+  235  ls
+  236  pacman -Q | grep polkit
+  237  yay polkit-gnome
+  238  cd /usr/lib/polkit-gnome/
+  239  ls
+  240  cd ~/
+  241  ls
+  242  cd Installer/
+  243  gh repo clone hafzansh/dotfiles
+  244  mv dotfiles/ rice1/
+  245  gh repo clone hafzansh/dotfiles
+  246  gh repo clone hafzansh/dotfiles
+  247  cd dotfiles/
+  248  ls
+  249  cp -r nvim/ ~/.config/nvim
+  250  nvim
+  251  yay fzf ripgrep
+  252  yay fzf
+  253  yay ripgrep
+  254  nvim
+  255  nvim
+  256  yay npm
+  257  npm --version
+  258  nvim
+  259  nvim
+  260  fzf
+  261  nvim ~/.config/hypr/hyprland.conf 
+  262  nvim ~/.config/hypr/hyprland.conf 
+  263  nvim ~/.config/hypr/hyprland.conf 
+  264  yay go
+  265  go
+  266  nvim
+  267  nvim
+  268  nvim
+  269  yay make
+  270  nvim
+  271  nvim
+  272  nvim
+  273  nvim
+  274  nvim
+  275  nvim
+  276  nvim
+  277  cd ~/.local/share/nvim
+  278  ls
+  279  cd lazy/harpoon/
+  280  nvim .
+  281  rm -rf ~/.cache/nvim
+  282  nvim .
+  283  nvim
+  284  nvim
+  285  yay cloudflare-warp-bin
+  286  sudo systemctl start warp-svc.service
+  287  sudo systemctl enable --now warp-svc.service
+  288  systemctl --user enable --now warp-taskbar
+  289  warp-cli set mode warp+doh
+  290  warp-cli set-mode warp+doh
+  291  warp-cli status
+  292  yay sddm-git
+  293  sudo reboot now
+  294  yay ark
+  295  yay 7-zip
+  296  7zz
+  297  yay fileroller
+  298  nvim ~/.config/hypr/hyprland.conf 
+  299  nvim ~/.config/waybar/
+  300  nvim ~/.config/waybar/
+  301  yay kvantum
+  302  yay brave-bin
+  303  brave
+  304  brave
+  305  prime-run brave
+  306  yay -R brave
+  307  yay -R brave-bin
+  308  yay flatpak
+  309  flatpak install flathub com.brave.Browser
+  310  brave
+  311  which brave
+  312  flatpak run com.brave.Browser
+  313  flatpak run com.brave.Browser --no-experiments
+  314  yay xwayland
+  315  flatpak run com.brave.Browser --password-store=gnome
+  316  prime-run flatpak run com.brave.Browser --password-store=gnome
+  317  nvim ~/.config/hypr/hyprland.conf 
+  318  cd /usr/share/applications/
+  319  ls
+  320  which com.brave.Browser
+  321  com.brave.Browser
+  322  brave
+  323  cd ~/.local/share/flatpak/
+  324  ls
+  325  cd repo
+  326  ls
+  327  cd ..
+  328  cd /var/lib/flatpak/app
+  329  ls
+  330  cd com.brave.Browser/
+  331  nvim .
+  332  nvim .
+  333  sudo nvim .
+  334  nvim .
+  335  sudo nvim .
+  336  yay chrome
+  337  chrome
+  338  google-chrome-stable
+  339  mount /dev/sda4 ~/mnt/Data/
+  340  sudo mount /dev/sda4 ~/mnt/Data/
+  341  nvim ~/.config/hypr/hyprland.conf 
+  342  dunst
+  343  nvim ~/.config/hypr/hyprland.conf 
+  344  nvim ~/.config/hypr/hyprland.conf 
+  345  dunstify "it"
+  346  dunstify "it works"
+  347  sudo fc-cache -r -v
+  348  dunstctl debug
+  349  dunst
+  350  prime-run flatpak run com.brave.Browser
+  351  prime-run flatpak run com.brave.Browser --password-store=gnome
+  352  cd ~/Pictures/
+  353  mv samurai-in-the-mountains-2160x1440-v0-zr253okqa34c1.jpg 1.jpg
+  354  mkdir Wallpapers
+  355  mv 1.jpg Wallpapers/1.jpg
+  356  nvim ~/.config/hypr/hyprpaper.conf
+  357  nvim ~/.config/hypr/hyprland.conf 
+  358  hyprctl hyprpaper
+  359  nvim ~/.config/hypr/hyprland.conf 
+  360  hyprctl monitors
+  361  hyprctl hyprpaper
+  362  hyprctl hyprpaper
+  363  yay hyperpaper
+  364  yay hyprpaper
+  365  hyprctl hyprpaper
+  366  hyprpaper
+  367  hyprctl hyprpaper wallpaper ,/home/hafiz/Pictures/Wallpapers/1.jpg
+  368  hyprctl hyprpaper wallpaper eDP-1,/home/hafiz/Pictures/Wallpapers/1.jpg
+  369  nvim ~/.config/hypr/hyprpaper.conf
+  370  hyprctl hyprpaper wallpaper
+  371  ls
+  372  cd ~/.config/hypr
+  373  ls
+  374  hyprctl hyprpaper hyprpaper.conf 
+  375  hyprctl hyprpaper load all
+  376  hyprctl hyprpaper --help
+  377  nvim ~/.config/hypr/hyprland.conf 
+  378  swaync-client -t -sw
+  379  killall swaync
+  380  dunst &&
+  381  dunst
+  382  exec-once dunst
+  383  exec dunst
+  384  ls
+  385  sudo reboot now
+  386  Hyprland
+  387  swaylock
+  388  cd ~/.config/hypr
+  389  ls
+  390  cd ..
+  391  nvim
+  392  nvim .
+  393  wlogout
+  394  swaync
+  395  killall dunst
+  396  sawync
+  397  swaync
+  398  nvim .
+  399  nvim .
+  400  yay nwg-bar
+  401  yay nwg-bar
+  402  nwg-bar
+  403  nwg-bar
+  404  yay -R sddm-git
+  405  yay gtkgreet
+  406  sudo systemctl enable --now greetd
+  407  sudo systemctl enable greetd
+  408  yay greetd
+  409  sudo systemctl enable --now greetd
+  410  gtkgreet
+  411  sudo systemctl enable greetd
+  412  nvim /etc/greetd/config.toml 
+  413  sudo nvim /etc/greetd/config.toml 
+  414  cd /etc/greetd
+  415  ls
+  416  sudo nvim hyprland.conf
+  417  cd /etc/greetd/
+  418  ls
+  419  sudo nvim environtments
+  420  gtkgreet
+  421  sudo reboot now
+  422  Hyprland
+  423  yay spotify
+  424  curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh
+  425  which spotify
+  426  sudo chmod a+wr /opt/spotify
+  427  sudo chmod a+wr /opt/spotify/Apps -R
+  428  cd /opt/spotify/
+  429  ls
+  430  cd ~/.config/
+  431  ls
+  432  spicetify
+  433  spicetify
+  434  spicetify --help
+  435  ls
+  436  spicetify update
+  437  nvim config-xpui.ini 
+  438  spotify --enable-features=UseOzonePlatform --ozone-platform=wayland
+  439  curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.sh | sh
+  440  nvim config-xpui.ini 
+  441  spotify --enable-features=UseOzonePlatform --ozone-platform=wayland
+  442  cd ~/.config/nvim
+  443  nvim
+  444  nvim .
+  445  nvim .
+  446  yay helvetica
+  447  spicetify
+  448  spicetify config-dir
+  449  cd ~/.var/app/
+  450  ls
+  451  cd /opt/spotify/
+  452  ls
+  453  cd ~/.var/app/
+  454  ls
+  455  clear
+  456  cd /opt/spotify/
+  457  ls
+  458  cd ~/.var/app/
+  459  ls
+  460  cd ~/.config/spotify/
+  461  ls
+  462  cd ~/.config/spicetify/
+  463  nvim .
+  464  spicetify update
+  465  nvim .
+  466  spicetify update
+  467  spicetify upgrade
+  468  spicetify apply
+  469  spicetify backup apply
+  470  nvim ~/.config/kitty/kitty.conf 
+  471  nvim ~/.config/hypr/hyprland.conf 
+  472  swaync
+  473  swaync-client -t -sw
+  474  swaync-client -t -sw
+  475  yay qt5-gsettings
+  476  yay systemsettings
+  477  yay brightnessctl
+  478  showkey
+  479  yay showkey
+  480  wshowkeys
+  481  wshowkeys
+  482  nvim ~/.config/hypr/hyprland.conf 
+  483  nvim ~/.config/hypr/hyprland.conf 
+  484  yay flutter
+  485  nvim ~/.config/hypr/hyprland.conf 
+  486  wpctl
+  487  yay catppuccin-gtk-theme
+  488  df -h --pretty
+  489  df -h
+  490  nvim ~/.config/hypr/hyprland.conf 
+  491  yay lucida
+  492  yay lucida
+  493  yay mpv brightnessctl
+  494  yay mpv brightnesctl
+  495  yay mpv
+  496  yay qt5ct
+  497  yay qt6ct
+  498  nvim ~/.config/hypr/hyprland.conf 
+  499  killall dunst
+  500  nvim ~/.config/waybar/
+  501  cd ~/.config/waybar/
+  502  nvim .
+  503  yay foot
+  504  pulseaudio
+  505  yay libnotify-bin
+  506  yay libnotify
+  507  cd ~/
+  508  ls
+  509  mkdir .scripts
+  510  cd .confif
+  511  cd .config
+  512  ls
+  513  cd hypr/
+  514  ls
+  515  mkdir scripts
+  516  cd scripts/
+  517  nvim audio_output.sh
+  518  chmod +x audio_output.sh 
+  519  ./audio_output.sh 
+  520  ./audio_output.sh 
+  521  ./audio_output.sh 
+  522  ./audio_output.sh 
+  523  wshowkeys 
+  524  nvim ~/.config/hypr/hyprland.conf 
+  525  ./audio_output.sh 
+  526  ./audio_output.sh 
+  527  nvim ~/.config/hypr/hyprland.conf 
+  528  yay grim
+  529  nvim ~/.config/hypr/hyprland.
+  530  nvim ~/.config/hypr/hyprland.conf
+  531  clear
+  532  kshowkeys
+  533  wshowkeys 
+  534  nvim ~/.config/hypr/hyprland.conf
+  535  nvidia-smi
+  536  warp-cli status
+  537  nvim ~/.config/waybar/config 
+  538  history >> hs.txt

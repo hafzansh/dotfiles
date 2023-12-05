@@ -11,6 +11,7 @@ $time\
     $python\
     $conda\
     $nodejs\
+    $dart\
 )\
 $cmd_duration
 [╰─](fg:arrow)$character\
@@ -167,9 +168,16 @@ format = "[ ](fg:clang)[$symbol($version(-$name) )](bg:clang fg:text_color)[�
 symbol = " "
 version_format = "${raw}"
 disabled = true
+
+[dart]
+detect_folders = ['.dart_tool']
+format = "[ ](fg:rust)[$symbol $version](bg:rust fg:text_color)[](fg:rust)"
+symbol = ""
+disabled = false
 [os]
 format = "[ ](fg:os)[$symbol](bg:os)[](fg:os)"
-disabled = false                                 # 
+disabled = false
+
 [os.symbols]
 Alpine = " "
 Amazon = " "

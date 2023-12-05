@@ -1,109 +1,52 @@
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Configuration For Rofi Version: 1.7.3
- **/
+/*******************************************************************************
+ * ROFI Color theme: Bioluminaut
+ * User: SauerCrest
+ * Copyright: Guglielmo Piasenti
+ *******************************************************************************/
 
+
+/*****----- Configuration -----*****/
 configuration {
-	/*---------- General setting ----------*/
-	modi: "drun,run,filebrowser,window";
-	case-sensitive: false;
-	cycle: true;
-	filter: "";
-	scroll-method: 0;
+	modi:                       "drun,filebrowser,window";
+    show-icons:                 true;
+    display-drun:               "";
+    display-run:                "";
+    display-filebrowser:        "";
+    display-window:             "";
+	drun-display-format:        "{name}";
+	window-format:              "{w} · {c} · {t}";
+    scroll-method: 0;
 	normalize-match: true;
-	show-icons: true;
-	icon-theme: "Papirus";
 /*	cache-dir: ;*/
 	steal-focus: false;
 /*	dpi: -1;*/
 
-	/*---------- Matching setting ----------*/
+/*---------- Matching setting ----------*/
 	matching: "normal";
 	tokenize: true;
 
-	/*---------- SSH settings ----------*/
-	ssh-client: "ssh";
-	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
-	parse-hosts: true;
-	parse-known-hosts: true;
 
-	/*---------- Drun settings ----------*/
-	drun-categories: "";
-	drun-match-fields: "name,generic,exec,categories,keywords";
-	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
-	drun-show-actions: false;
-	drun-url-launcher: "xdg-open";
-	drun-use-desktop-cache: false;
-	drun-reload-desktop-cache: false;
-	drun {
-		/** Parse user desktop files. */
-		parse-user:   true;
-		/** Parse system desktop files. */
-		parse-system: true;
-    }
-
-	/*---------- Run settings ----------*/
-	run-command: "{cmd}";
-	run-list-command: "";
-	run-shell-command: "{terminal} -e {cmd}";
-
-	/*---------- Fallback Icon ----------*/
-	run,drun {
-		fallback-icon: "application-x-addon";
-	}
-
-	/*---------- Window switcher settings ----------*/
-	window-match-fields: "title,class,role,name,desktop";
-	window-command: "wmctrl -i -R {window}";
-	window-format: "{w} - {c} - {t:0}";
-	window-thumbnail: false;
-
-	/*---------- Combi settings ----------*/
-/*	combi-modi: "window,run";*/
-/*	combi-hide-mode-prefix: false;*/
-/*	combi-display-format: "{mode} {text}";*/
-
-	/*---------- History and Sorting ----------*/
-	disable-history: false;
-	sorting-method: "normal";
-	max-history-size: 25;
-
-	/*---------- Display setting ----------*/
-	display-window: "Windows";
-	display-windowcd: "Window CD";
-	display-run: "Run";
-	display-ssh: "SSH";
-	display-drun: "Apps";
-	display-combi: "Combi";
-	display-keys: "Keys";
-	display-filebrowser: "Files";
-
-	/*---------- Misc setting ----------*/
+/*---------- Misc setting ----------*/
 	terminal: "rofi-sensible-terminal";
-	font: "Mono 12";
+	font: "FontAwesome, SK-Modernist 12";
 	sort: false;
 	threads: 0;
 	click-to-exit: true;
 /*	ignored-prefixes: "";*/
 /*	pid: "/run/user/1000/rofi.pid";*/
 
-	/*---------- File browser settings ----------*/
+/*---------- File browser settings ----------*/
     filebrowser {
 /*	  directory: "/home";*/
       directories-first: true;
       sorting-method:    "name";
     }
+}
 
-	/*---------- Other settings ----------*/
-    timeout {
-      action: "kb-cancel";
-      delay:  0;
-    }
+@theme "bioluminaut"
 
-	/*---------- Keybindings ----------*/
+/*---------- Optional keybindings -  insert inside configuration ----------*/
+/*---------- Keybindings ----------*/
 /*
 	kb-primary-paste: "Control+V,Shift+Insert";
 	kb-secondary-paste: "Control+v,Insert";
@@ -140,12 +83,12 @@ configuration {
 	kb-ellipsize: "Alt+period";
 	kb-toggle-case-sensitivity: "grave,dead_grave";
 	kb-toggle-sort: "Alt+grave";
-	kb-cancel: "Escape,Control+g,Control+bracketleft,Alt+space";
+	kb-cancel: "Escape,Control+g,Control+bracketleft";
 	kb-custom-1: "Alt+1";
 	kb-custom-2: "Alt+2";
 	kb-custom-3: "Alt+3";
 	kb-custom-4: "Alt+4";
-	kb-custom-5: "Alt+5,Alt+KP_End";
+	kb-custom-5: "Alt+5";
 	kb-custom-6: "Alt+6";
 	kb-custom-7: "Alt+7";
 	kb-custom-8: "Alt+8";
@@ -178,4 +121,3 @@ configuration {
 	me-accept-entry: "MouseDPrimary";
 	me-accept-custom: "Control+MouseDPrimary";
 */
-}

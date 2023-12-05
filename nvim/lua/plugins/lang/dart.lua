@@ -40,7 +40,7 @@ return {
           settings = {
             showtodos = true,
             completefunctioncalls = true,
-            analysisexcludedfolders = { "/snap/bin/flutter/" },
+            analysisexcludedfolders = { "~/.sdk/flutter/bin/" },
             renamefileswithclasses = "always", -- "always"
             enablesnippets = true,
             updateimportsonrename = true,
